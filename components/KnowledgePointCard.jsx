@@ -8,15 +8,15 @@ const KnowledgePointCard = ({ title, explanations, onPracticeClick }) => {
       <h2 className="text-lg font-semibold mb-2 text-gray-800">{title}</h2>
       <div className="flex space-x-2 mb-3">
         <button
-          className={\`px-3 py-1 rounded-full text-sm border \${activeTab === 'professional' ? 'bg-blue-500 text-white' : 'border-gray-300 text-gray-700'}\`}
+          className={`px-3 py-1 rounded-full text-sm border ${activeTab === 'professional' ? 'bg-blue-500 text-white' : 'border-gray-300 text-gray-700'}`}
           onClick={() => setActiveTab('professional')}
         >专业版</button>
         <button
-          className={\`px-3 py-1 rounded-full text-sm border \${activeTab === 'beginner' ? 'bg-blue-500 text-white' : 'border-gray-300 text-gray-700'}\`}
+          className={`px-3 py-1 rounded-full text-sm border ${activeTab === 'beginner' ? 'bg-blue-500 text-white' : 'border-gray-300 text-gray-700'}`}
           onClick={() => setActiveTab('beginner')}
         >小白版</button>
         <button
-          className={\`px-3 py-1 rounded-full text-sm border \${activeTab === 'case' ? 'bg-blue-500 text-white' : 'border-gray-300 text-gray-700'}\`}
+          className={`px-3 py-1 rounded-full text-sm border ${activeTab === 'case' ? 'bg-blue-500 text-white' : 'border-gray-300 text-gray-700'}`}
           onClick={() => setActiveTab('case')}
         >案例版</button>
       </div>
